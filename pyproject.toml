@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+pythonpath = "src"
+
+[tool.coverage.run]
+omit = [
+    "tests/*",
+    ]

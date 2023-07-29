@@ -1,0 +1,5 @@
+#[LOGGING]
+#logging-format-style=fstr
+
+[FORMAT]
+max-line-length=l20
