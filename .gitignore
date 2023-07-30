@@ -1,4 +1,6 @@
-__pycache__/*
+**/__pycache__/
 .coverage
-src/__pycache__/*
-tests/__pycache__/*
+build/
+dist/
+Diablo4XPTracker.egg-info/
+dungeons.csv
