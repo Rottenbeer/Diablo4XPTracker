@@ -7,7 +7,7 @@ from dungeonmanager import DungeonManager
 from configreader import ConfigReader
 
 LOGGING_FORMAT = "%(asctime)s - %(filename)s - %(name)s - %(levelname)s - %(message)s"
-logging.basicConfig(format=LOGGING_FORMAT, level=logging.DEBUG)
+logging.basicConfig(format=LOGGING_FORMAT, level=logging.INFO)
 
 logging.info("Diablo IV Nightmare Dungeon Experience Tracker")
 
