@@ -49,7 +49,7 @@ def test_config_parsing_xp_box():
 
 def test_config_parsing_screenshot_path():
     c = ConfigReader("tests/resources/test_config.ini")
-    assert c.screenshot_path == "C:/Users/rotte/Documents/Diablo IV/Screenshots"
+    assert c.screenshot_path == "tests/resources/tmp"
 
 
 def test_config_raises_set_screenshot_path():
