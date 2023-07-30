@@ -40,13 +40,6 @@ class XPExtractor:
 
         # Setting the points for cropped image
         left, top, right, bottom = self._config.xp_box_coordinates
-        # left = 1054
-        # top = 1164
-        # right = 1520
-        # bottom = 1230
-
-        # Cropped image of above dimension
-        # (It will not change original image)
         im1 = image.crop((left, top, right, bottom))
 
         rawstring = pytesseract.image_to_string(im1)
@@ -58,13 +51,6 @@ class XPExtractor:
 
         # Setting the points for cropped image
         left, top, right, bottom = self._config.dungeon_name_coordinates
-        # left = 2097
-        # top = 442
-        # right = 2502
-        # bottom = 489
-
-        # Cropped image of above dimension
-        # (It will not change original image)
         im1 = image.crop((left, top, right, bottom))
 
         rawstring = pytesseract.image_to_string(im1)
