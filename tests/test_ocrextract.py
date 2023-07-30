@@ -1,7 +1,7 @@
 import pytest
 
-from ocrextract import XPExtractor
-from configreader import ConfigReader
+from xp_tracker.ocrextract import XPExtractor
+from xp_tracker.configreader import ConfigReader
 
 
 @pytest.fixture(autouse=True)

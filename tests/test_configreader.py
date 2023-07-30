@@ -1,6 +1,6 @@
 import pytest
 
-from configreader import ConfigReader
+from xp_tracker.configreader import ConfigReader
 
 
 def test_init_correct_config():

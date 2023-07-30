@@ -4,7 +4,8 @@ import logging
 import pytesseract
 
 from PIL import Image
-from levelinfo import LevelInfo
+
+from .levelinfo import LevelInfo
 
 
 class XPExtractor:

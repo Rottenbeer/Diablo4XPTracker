@@ -2,7 +2,7 @@ import pytest
 import datetime
 from unittest.mock import MagicMock
 
-from levelinfo import LevelInfo
+from xp_tracker.levelinfo import LevelInfo
 
 FAKE_NOW = datetime.datetime(2023, 7, 30, 17, 0, 0)
 

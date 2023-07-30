@@ -5,8 +5,8 @@ import time
 
 from unittest.mock import MagicMock
 
-from screenshotwatcher import ScreenshotWatcher
-from configreader import ConfigReader
+from xp_tracker.screenshotwatcher import ScreenshotWatcher
+from xp_tracker.configreader import ConfigReader
 
 
 @pytest.fixture(autouse=True)
