@@ -5,7 +5,7 @@ import time
 
 from unittest.mock import MagicMock
 
-from screenshotwatcher import ScreenshotWatcher, NoCallbackRegisteredException
+from screenshotwatcher import ScreenshotWatcher
 from configreader import ConfigReader
 
 
