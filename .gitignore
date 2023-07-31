@@ -1,6 +1,12 @@
 **/__pycache__/
 .coverage
+.mypy_cache
+.pytest_cache
+.tox
+.venv
 build/
-dist/
 Diablo4XPTracker.egg-info/
+dist/
 dungeons.csv
+htmlcov
+tools/
