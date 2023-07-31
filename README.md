@@ -1,12 +1,20 @@
 # Diablo IV Nightmare Dungeon Experience Tracker
 
-Track your gained experience in nightmare dungeons with two simple screenshots of the xp bar at the start and the end of the dungeon.
+Track your gained experience in nightmare dungeons with two simple screenshots of the xp bar at the start and the end of the dungeon (check the example below).
+Use the hotkey defined in the Diablo IV hotkey menu and set the path to the screenshot folder accordingly (See section "Configuration").
 ![Example Screenshot](screenshot.jpg)
 
-ORC done via [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
+ORC done via [Tesseract OCR](https://github.com/tesseract-ocr/tesseract), which needs to be installed.
+
+## Configuration
+Diablo4XPTracker requires a config file that contains a path to the Diablo IV screenshot directory, the Tesseract executable and the
+coordinates of a box round your dungeon name and xp box next to the executable. The defaults are fitting for 1440p. Please look at the following screenshot to determine
+the coordinates you need in case you don't have a 1440p monitor. The 4 numbers represent the left(x), top(y), right(x) and bottom(y) values of the
+bounding box.
+![Coordinates Demo](coordinate_image.jpg)
 
 ## Example output:
-    python.exe .\xp_tracker\xp_tracker.py
+    python.exe .\main.py
     2023-07-29 19:21:28,604 - xp_tracker.py - root - INFO - Diablo IV Nightmare Dungeon Experience Tracker
     2023-07-29 19:21:44,616 - dungeonmanager.py - root - INFO - Gained 1,012,878 XP in Hoarfrost Demise. It took 0:05:14.188513 XP/H: 11,605,646.45!
     2023-07-29 19:21:44,616 - dungeonmanager.py - root - INFO - Gained 1,171,716 XP in Mercy's Reach. It took 0:04:58.720414 XP/H: 14,120,821.35!
