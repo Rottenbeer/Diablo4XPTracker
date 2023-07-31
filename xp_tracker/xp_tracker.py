@@ -10,7 +10,7 @@ LOGGING_FORMAT = "%(asctime)s - %(filename)s - %(name)s - %(levelname)s - %(mess
 logging.basicConfig(format=LOGGING_FORMAT, level=logging.INFO)
 
 
-def main():
+def main() -> None:
     logging.info("Diablo IV Nightmare Dungeon Experience Tracker")
 
     config = ConfigReader("config.ini")

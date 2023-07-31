@@ -2,7 +2,7 @@ import datetime
 
 
 class LevelInfo:
-    def __init__(self, level, xpstart, xpend):
+    def __init__(self, level: int, xpstart: int, xpend: int) -> None:
         self.level = level
         self.xp_current = xpstart
         self.xp_max = xpend

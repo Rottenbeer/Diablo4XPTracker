@@ -2,9 +2,11 @@ import configparser
 import logging
 import sys
 
+from typing import List
+
 
 class ConfigReader:
-    def __init__(self, configpath):
+    def __init__(self, configpath: str) -> None:
         config = configparser.ConfigParser()
         config.read(configpath)
 
@@ -54,41 +56,41 @@ class ConfigReader:
             sys.exit(-1)
 
     @property
-    def screenshot_path(self):
+    def screenshot_path(self) -> str:
         return self._screenshot_path
 
     @screenshot_path.setter
-    def screenshot_path(self, value):
+    def screenshot_path(self, _) -> None:
         raise AttributeError("Read-only attribute")
 
     @property
-    def tesseract_exe(self):
+    def tesseract_exe(self) -> str:
         return self._tesseract_exe
 
     @tesseract_exe.setter
-    def tesseract_exe(self, value):
+    def tesseract_exe(self, _) -> None:
         raise AttributeError("Read-only attribute")
 
     @property
-    def output_csv(self):
+    def output_csv(self) -> str:
         return self._output_csv
 
     @output_csv.setter
-    def output_csv(self, value):
+    def output_csv(self, _) -> str:
         raise AttributeError("Read-only attribute")
 
     @property
-    def dungeon_name_coordinates(self):
+    def dungeon_name_coordinates(self) -> List[int]:
         return self._dungeon_name_coordinates
 
     @dungeon_name_coordinates.setter
-    def dungeon_name_coordinates(self, value):
+    def dungeon_name_coordinates(self, _) -> None:
         raise AttributeError("Read-only attribute")
 
     @property
-    def xp_box_coordinates(self):
+    def xp_box_coordinates(self) -> List[int]:
         return self._xp_box_coordinates
 
     @xp_box_coordinates.setter
-    def xp_box_coordinates(self, value):
+    def xp_box_coordinates(self, _):
         raise AttributeError("Read-only attribute")

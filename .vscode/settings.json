@@ -9,5 +9,22 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
-    "python.formatting.provider": "none"
+    "python.formatting.provider": "none",
+    "mypy-type-checker.importStrategy": "fromEnvironment",
+    "python.analysis.typeCheckingMode": "basic",
+    "mypy.runUsingActiveInterpreter": true,
+    "cSpell.words": [
+        "configreader",
+        "Diablo",
+        "Florian",
+        "levelinfo",
+        "ocrextract",
+        "ocrextractor",
+        "parsexp",
+        "pytesseract",
+        "tesseract",
+        "xpgained",
+        "xpregex",
+        "xptracker"
+    ]
 }
